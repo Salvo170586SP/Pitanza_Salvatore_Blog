@@ -39,7 +39,9 @@ class ProjectController extends Controller
      */
     public function show($id)
     {
-        //
+        $project = Project::with('languages')->find($id);
+
+        return response()->json($project);
     }
 
     /**

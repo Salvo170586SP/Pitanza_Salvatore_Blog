@@ -14,20 +14,36 @@
           <div class="card shadow my-3" style="width: 18rem">
             <figure>
               <img
+                v-if="project.img"
                 :src="/storage/ + project.img"
+                class="card-img-top img-fluid shadow"
+                :alt="project.title"
+              />
+              <img
+                v-else
+                src="https://banksiafdn.com/wp-content/uploads/2019/10/placeholde-image.jpg"
                 class="card-img-top img-fluid shadow"
                 :alt="project.title"
               />
             </figure>
             <div class="card-body">
               <h5 class="card-title text-muted fw-bold">{{ project.title }}</h5>
-              <span v-for="language in project.languages" :key="language.id" :class="`badge shadow mx-1 bg-${language.color}`"> {{ language.name }} </span>
+              <span
+                v-for="language in project.languages"
+                :key="language.id"
+                :class="`badge shadow mx-1 bg-${language.color}`"
+              >
+                {{ language.name }}
+              </span>
             </div>
-              <div class="d-flex align-items-end p-3 text-end">
-                <router-link :to="{ name: 'project-detail', params:{id: project.id} }"  class="btn btn-sm btn-primary text-light shadow"
-                  ><i class="fa-solid fa-magnifying-glass"></i> Scopri i dettagli</router-link
-                >
-              </div>
+            <div class="d-flex align-items-end p-3 text-end">
+              <router-link
+                :to="{ name: 'project-detail', params: { id: project.id } }"
+                class="btn btn-sm btn-primary text-light shadow"
+                ><i class="fa-solid fa-magnifying-glass"></i> Scopri i
+                dettagli</router-link
+              >
+            </div>
           </div>
         </div>
       </div>
@@ -66,7 +82,12 @@ export default {
 </script>
 
 <style scoped lang="scss">
-.card{
-      border: 1px solid lightgray;
+.card {
+  border: 1px solid lightgray;
+  img {
+     height: 200px;
+    object-fit: cover;
+    object-position: center;
+  } 
 }
 </style>

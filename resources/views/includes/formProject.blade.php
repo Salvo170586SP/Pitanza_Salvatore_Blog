@@ -37,7 +37,7 @@
         </div>
     </div>
     <div class="col-2 text-end">
-        <img src="{{ $project->img ?? 'https://www.edengi.it/vendor/paginesi/custom_sdk/src/php_classes/placeholder.jpg' }}"
+        <img src="{{ asset("storage/$project->img") ?? 'https://www.edengi.it/vendor/paginesi/custom_sdk/src/php_classes/placeholder.jpg'  }}"
             class="img-fluid shadow" width="250" alt="{{ $project->title }}" id="output">
     </div>
 </div>
