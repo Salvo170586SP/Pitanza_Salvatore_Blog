@@ -44703,21 +44703,29 @@ var render = function () {
                       }),
                     ]),
                     _vm._v(" "),
-                    _c("div", { staticClass: "card-body" }, [
-                      _c(
-                        "h5",
-                        { staticClass: "card-title text-muted fw-bold" },
-                        [_vm._v(_vm._s(project.title))]
-                      ),
-                      _vm._v(" "),
-                      project.language
-                        ? _c(
+                    _c(
+                      "div",
+                      { staticClass: "card-body" },
+                      [
+                        _c(
+                          "h5",
+                          { staticClass: "card-title text-muted fw-bold" },
+                          [_vm._v(_vm._s(project.title))]
+                        ),
+                        _vm._v(" "),
+                        _vm._l(project.languages, function (language) {
+                          return _c(
                             "span",
-                            { class: "badge bg-" + project.language.color },
-                            [_vm._v(" " + _vm._s(project.language.name) + " ")]
+                            {
+                              key: language.id,
+                              class: "badge shadow mx-1 bg-" + language.color,
+                            },
+                            [_vm._v(" " + _vm._s(language.name) + " ")]
                           )
-                        : _vm._e(),
-                    ]),
+                        }),
+                      ],
+                      2
+                    ),
                     _vm._v(" "),
                     _c(
                       "div",

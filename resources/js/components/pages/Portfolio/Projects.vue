@@ -21,7 +21,7 @@
             </figure>
             <div class="card-body">
               <h5 class="card-title text-muted fw-bold">{{ project.title }}</h5>
-              <span v-if="project.language" :class="`badge bg-${project.language.color}`"> {{ project.language.name }} </span>
+              <span v-for="language in project.languages" :key="language.id" :class="`badge shadow mx-1 bg-${language.color}`"> {{ language.name }} </span>
             </div>
               <div class="d-flex align-items-end p-3 text-end">
                 <router-link :to="{ name: 'project-detail', params:{id: project.id} }"  class="btn btn-sm btn-primary text-light shadow"
