@@ -24,19 +24,20 @@
                 src="https://banksiafdn.com/wp-content/uploads/2019/10/placeholde-image.jpg"
                 class="card-img-top img-fluid shadow"
                 :alt="project.title"
+                
               />
             </figure>
             <div class="card-body">
-              <h5 class="card-title text-muted fw-bold">{{ project.title }}</h5>
+              <h5 class="card-title text-muted text-center py-2 fw-bold">{{ project.title }}</h5>
               <span
                 v-for="language in project.languages"
                 :key="language.id"
-                :class="`badge shadow mx-1 bg-${language.color}`"
+                :class="`badge shadow text-dark mx-1 bg-${language.color}`"
               >
                 {{ language.name }}
               </span>
             </div>
-            <div class="d-flex align-items-end p-3 text-end">
+            <div class="col-12 d-flex align-items-end p-3">
               <router-link
                 :to="{ name: 'project-detail', params: { id: project.id } }"
                 class="btn btn-sm btn-primary text-light shadow"
@@ -84,8 +85,12 @@ export default {
 <style scoped lang="scss">
 .card {
   border: 1px solid lightgray;
+    transition: transform 0.8s;
+  &:hover {
+    transform: translateY(-15px);
+  }
   img {
-     height: 200px;
+     height: 150px;
     object-fit: cover;
     object-position: center;
   } 

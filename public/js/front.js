@@ -5816,6 +5816,14 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: "projectDetail",
@@ -5859,6 +5867,7 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
+//
 //
 //
 //
@@ -11426,7 +11435,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../../node_modules/c
 
 
 // module
-exports.push([module.i, "#project-detail[data-v-47981f06] {\n  height: 70vh;\n}", ""]);
+exports.push([module.i, "#project-detail[data-v-47981f06] {\n  height: 85vh;\n}", ""]);
 
 // exports
 
@@ -11445,7 +11454,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../../node_modules/c
 
 
 // module
-exports.push([module.i, ".card[data-v-2787ff17] {\n  border: 1px solid lightgray;\n}\n.card img[data-v-2787ff17] {\n  height: 200px;\n  -o-object-fit: cover;\n     object-fit: cover;\n  -o-object-position: center;\n     object-position: center;\n}", ""]);
+exports.push([module.i, ".card[data-v-2787ff17] {\n  border: 1px solid lightgray;\n  transition: transform 0.8s;\n}\n.card[data-v-2787ff17]:hover {\n  transform: translateY(-15px);\n}\n.card img[data-v-2787ff17] {\n  height: 150px;\n  -o-object-fit: cover;\n     object-fit: cover;\n  -o-object-position: center;\n     object-position: center;\n}", ""]);
 
 // exports
 
@@ -44784,26 +44793,35 @@ var render = function () {
                 [
                   _c(
                     "router-link",
-                    {
-                      staticClass: "btn btn-primary text-light",
-                      attrs: { to: { name: "home-portfolio" } },
-                    },
-                    [_vm._v("Torna indietro")]
+                    { attrs: { to: { name: "home-portfolio" } } },
+                    [
+                      _c("i", {
+                        staticClass: "fa-solid fa-circle-arrow-left fa-2x",
+                      }),
+                    ]
                   ),
                 ],
                 1
               ),
               _vm._v(" "),
-              _c("div", { staticClass: "col-12" }, [
+              _c("div", { staticClass: "col-12 text-center" }, [
                 _c("img", {
-                  staticClass: "img-fluid",
+                  staticClass: "img-fluid shadow border",
                   attrs: {
                     src: /storage/ + _vm.project.img,
                     alt: _vm.project.title,
+                    width: "70%",
                   },
                 }),
-                _vm._v(" "),
-                _c("div", { staticClass: "d-flex align-items-center py-4" }, [
+              ]),
+              _vm._v(" "),
+              _c(
+                "div",
+                {
+                  staticClass:
+                    "col-12 d-flex align-items-center justify-content-between py-4",
+                },
+                [
                   _c("h3", { staticClass: "me-3" }, [
                     _vm._v(_vm._s(_vm.project.title)),
                   ]),
@@ -44811,15 +44829,15 @@ var render = function () {
                   _c(
                     "p",
                     [
-                      _vm._v(
-                        "\n            Tecnologie utilizzate:\n            "
-                      ),
+                      _vm._v("\n          Tecnologie utilizzate:\n          "),
                       _vm._l(_vm.project.languages, function (language) {
                         return _c(
                           "span",
                           {
                             key: language.id,
-                            class: "badge shadow mx-1 bg-" + language.color,
+                            class:
+                              "badge shadow text-dark mx-1 bg-" +
+                              language.color,
                           },
                           [_vm._v(_vm._s(language.name))]
                         )
@@ -44827,9 +44845,25 @@ var render = function () {
                     ],
                     2
                   ),
-                ]),
-                _vm._v(" "),
-                _c("p", [_vm._v(_vm._s(_vm.project.description))]),
+                ]
+              ),
+              _vm._v(" "),
+              _c("div", { staticClass: "col-12" }, [
+                _c(
+                  "a",
+                  {
+                    staticClass: "btn btn-secondary",
+                    attrs: { target: "_blank", href: _vm.project.url },
+                  },
+                  [
+                    _c("i", { staticClass: "fa-solid fa-cloud-arrow-down" }),
+                    _vm._v(" Scarica la repository"),
+                  ]
+                ),
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "col-12" }, [
+                _c("p", [_vm._v(" " + _vm._s(_vm.project.description))]),
               ]),
             ]),
           ]),
@@ -44907,7 +44941,10 @@ var render = function () {
                       [
                         _c(
                           "h5",
-                          { staticClass: "card-title text-muted fw-bold" },
+                          {
+                            staticClass:
+                              "card-title text-muted text-center py-2 fw-bold",
+                          },
                           [_vm._v(_vm._s(project.title))]
                         ),
                         _vm._v(" "),
@@ -44916,7 +44953,9 @@ var render = function () {
                             "span",
                             {
                               key: language.id,
-                              class: "badge shadow mx-1 bg-" + language.color,
+                              class:
+                                "badge shadow text-dark mx-1 bg-" +
+                                language.color,
                             },
                             [
                               _vm._v(
@@ -44933,7 +44972,7 @@ var render = function () {
                     _vm._v(" "),
                     _c(
                       "div",
-                      { staticClass: "d-flex align-items-end p-3 text-end" },
+                      { staticClass: "col-12 d-flex align-items-end p-3" },
                       [
                         _c(
                           "router-link",

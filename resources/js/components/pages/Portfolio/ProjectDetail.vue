@@ -4,29 +4,37 @@
     <div v-else class="container h-100">
       <div class="row h-100 align-items-center">
         <div class="col-12 my-3">
-          <router-link class="btn btn-primary text-light" :to="{ name: 'home-portfolio' }"
-            >Torna indietro</router-link
-          >
+          <router-link :to="{ name: 'home-portfolio' }"
+            ><i class="fa-solid fa-circle-arrow-left fa-2x"></i
+          ></router-link>
         </div>
-        <div class="col-12">
+        <div class="col-12 text-center">
           <img
             :src="/storage/ + project.img"
             :alt="project.title"
-            class="img-fluid"
+            class="img-fluid shadow border"
+            width="70%"
           />
-          <div class="d-flex align-items-center py-4">
-            <h3 class="me-3">{{ project.title }}</h3>
-            <p>
-              Tecnologie utilizzate:
-              <span
-                :class="`badge shadow mx-1 bg-${language.color}`"
-                v-for="language in project.languages"
-                :key="language.id"
-                >{{ language.name }}</span
-              >
-            </p>
-          </div>
-          <p>{{ project.description }}</p>
+        </div>
+        <div
+          class="col-12 d-flex align-items-center justify-content-between py-4"
+        >
+          <h3 class="me-3">{{ project.title }}</h3>
+          <p>
+            Tecnologie utilizzate:
+            <span
+              :class="`badge shadow text-dark mx-1 bg-${language.color}`"
+              v-for="language in project.languages"
+              :key="language.id"
+              >{{ language.name }}</span
+            >
+          </p>
+        </div>
+        <div class="col-12">
+          <a class="btn btn-secondary" target="_blank" :href="project.url"><i class="fa-solid fa-cloud-arrow-down"></i> Scarica la repository</a>
+        </div>
+        <div class="col-12">
+         <p> {{ project.description }}</p>
         </div>
       </div>
     </div>
@@ -34,11 +42,11 @@
 </template>
 
 <script>
-import Loader from '../../Loader.vue';
+import Loader from "../../Loader.vue";
 export default {
   name: "projectDetail",
   components: {
-      Loader,
+    Loader,
   },
   data() {
     return {
@@ -48,7 +56,7 @@ export default {
   },
   methods: {
     getProject() {
-        this.isLoading = true;
+      this.isLoading = true;
       axios
         .get("http://localhost:8000/api/projects/" + this.$route.params.id)
         .then((res) => {
@@ -71,6 +79,6 @@ export default {
 
 <style scoped lang="scss">
 #project-detail {
-  height: 70vh;
+  height: 85vh;
 }
 </style>

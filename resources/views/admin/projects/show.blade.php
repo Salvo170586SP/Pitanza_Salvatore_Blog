@@ -31,6 +31,9 @@
                                 -
                                 @endforelse
                                 <hr>
+                                <div class="col-12 text-end py-3">
+                                    <a class="btn btn-sm btn-secondary" target="_blank" href="{{ $project->url }}"><i class="fa-solid fa-cloud-arrow-down"></i> Scarica la repository</a>
+                                  </div>
                                 <h2 class="card-title">{{ $project->title }}</h2>
                                 <p class="card-text">{{ $project->description }}</p>
                                 <a class="btn btn-primary text-light shadow"

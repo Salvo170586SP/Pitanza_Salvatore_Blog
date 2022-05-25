@@ -29,6 +29,10 @@
             </span>
         @enderror
     </div>
+    <div class="col-12 mb-3">
+        <label for="url" class="form-label">Inserisci url del progetto</label>
+        <input type="url" id="url" name="url" class="form-control shadow" placeholder="url del progetto" value="{{ old('url', $project->url ?? '') }}">
+    </div>
 </div>
 <div class="row justify-content-end">
     <div class="col-10 text-start">
