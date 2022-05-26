@@ -39,7 +39,7 @@ export default {
     filter: grayscale(100%);
   }
   img:hover {
-    transform: scale(1.1);
+    transform: rotate(2deg) scale(1.3);
     filter: grayscale(0%);
   }
 }

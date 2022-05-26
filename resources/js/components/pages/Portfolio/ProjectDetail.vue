@@ -4,9 +4,9 @@
     <div v-else class="container h-100">
       <div class="row h-100 align-items-center">
         <div class="col-12 my-3">
-          <router-link :to="{ name: 'home-portfolio' }"
-            ><i class="fa-solid fa-circle-arrow-left fa-2x"></i
-          ></router-link>
+          <router-link class="btn text-light btn-primary" :to="{ name: 'home-portfolio' }"
+            ><i class="fa-solid fa-arrow-left"></i
+          > Torna al portfolio</router-link>
         </div>
         <div class="col-12 text-center">
           <img
@@ -17,9 +17,9 @@
           />
         </div>
         <div
-          class="col-12 d-flex align-items-center justify-content-between py-4"
+          class="col-12 d-flex align-items-center justify-content-between py-3"
         >
-          <h3 class="me-3">{{ project.title }}</h3>
+          <h3>{{ project.title }}</h3>
           <p>
             Tecnologie utilizzate:
             <span
@@ -30,7 +30,7 @@
             >
           </p>
         </div>
-        <div class="col-12">
+        <div class="col-12 py-3">
           <a class="btn btn-secondary" target="_blank" :href="project.url"><i class="fa-solid fa-cloud-arrow-down"></i> Scarica la repository</a>
         </div>
         <div class="col-12">
@@ -79,6 +79,6 @@ export default {
 
 <style scoped lang="scss">
 #project-detail {
-  height: 85vh;
+  margin: 20px 0;
 }
 </style>

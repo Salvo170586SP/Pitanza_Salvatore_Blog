@@ -4,6 +4,7 @@
   <Biograpy />
   <Skylls />
   <Projects />
+  <Follow />
 </div>
 </template>
 
@@ -12,6 +13,7 @@ import Jumbotron from './Jumbotron.vue';
 import Biograpy from './Biograpy.vue';
 import Skylls from './Skylls.vue';
 import Projects from './Projects.vue';
+import Follow from './Follow.vue';
 
 export default {
   name: "HomePortfolio",
@@ -19,7 +21,8 @@ export default {
     Jumbotron,
     Biograpy,
     Skylls,
-    Projects
+    Projects,
+    Follow
   }
 };
 </script>

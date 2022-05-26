@@ -1,9 +1,9 @@
 <template>
-  <section id="projects" class="pt-5">
+  <section id="projects" class="py-5">
     <div class="container">
       <div class="row">
         <div class="col-12 py-4 text-center">
-          <h2>Progetti realizzati</h2>
+          <h2>Alcuni dei progetti realizzati </h2>
         </div>
 
         <div

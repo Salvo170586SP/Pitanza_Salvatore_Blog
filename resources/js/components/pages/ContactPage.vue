@@ -1,18 +1,18 @@
 <template>
   <section id="contact">
     <Loader v-if="isLoading" />
-    <div v-else class="container h-100">
-      <div class="row h-100 align-items-center">
+    <div v-else class="container h-75">
+      <div class="row h-75 align-items-center">
         <div class="col-12">
           <h2>Contattami</h2>
-          <p>Puoi trovarmi anche sui canali social </p>
+          <p>Puoi trovarmi anche sui canali social</p>
         </div>
         <div class="col-12">
           <Alert
             v-if="alertMessage || hasErrors"
-            :type="hasErrors ? 'danger': 'success'"
+            :type="hasErrors ? 'danger' : 'success'"
             :dismissable="false"
-          >{{ alertMessage }}
+            >{{ alertMessage }}
             <ul v-if="hasErrors">
               <li v-for="(error, key) in errors" :key="key">{{ error }}</li>
             </ul>
@@ -43,12 +43,16 @@
               :class="{ 'is-invalid': errors.message }"
               id="message"
               name="message"
-              rows="3"
+              rows="7"
             ></textarea>
             <div class="invalid-feedback" v-if="errors.message">
               {{ errors.message }}
             </div>
-            <button type="submit" @click="sendMail" class="btn btn-primary text-light shadow my-3">
+            <button
+              type="submit"
+              @click="sendMail"
+              class="btn btn-primary text-light shadow my-3"
+            >
               Invia
             </button>
           </div>
@@ -86,25 +90,25 @@ export default {
     },
   },
   methods: {
-    validateForm(){
-        //VALIDAZIONE
-    const errors = {};
-    if (!this.form.email.trim()) errors.mail = "la mail è obbligatoria";
-    if (!this.form.message.trim())
-      errors.message = "il messaggio è obbligatorio";
-    //controllo se è una mail valida
-    if ( this.form.email.trim() &&
-      !this.form.email.match(
-        /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
+    validateForm() {
+      //VALIDAZIONE
+      const errors = {};
+      if (!this.form.email.trim()) errors.mail = "la mail è obbligatoria";
+      if (!this.form.message.trim())
+        errors.message = "il messaggio è obbligatorio";
+      //controllo se è una mail valida
+      if (
+        this.form.email.trim() &&
+        !this.form.email.match(
+          /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
+        )
       )
-    )
-      errors.mail = "La mail non è valida";
+        errors.mail = "La mail non è valida";
 
-    this.errors = errors;
+      this.errors = errors;
     },
 
     sendMail() {
-
       this.validateForm();
 
       //INVIO IL FORM
@@ -132,6 +136,7 @@ export default {
 
 <style scoped lang="scss">
 #contact {
-  height: 60vh;
+  margin-top: 70px;
+  height: 70vh;
 }
 </style>

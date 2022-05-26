@@ -2,28 +2,27 @@
   <section id="post-detail">
     <Loader v-if="isLoading" />
     <div v-else class="container h-100">
-      <div class="row h-100 align-items-center pt-5">
-        <div class="col-12 d-flex align-items-center justify-content-between">
-          <h2>Post detail</h2>
+      <div class="row h-100 align-items-center">
+        <div class="col-12 my-3">
           <router-link class="btn btn-primary text-light shadow" :to="{name: 'home'}"><i class="fa-solid fa-house"></i> Torna alla home</router-link>
         </div>
-        <div class="col-12">
-          <div class="card shadow mb-3">
+        <div class="col-12 text-center">
             <img
               :src="post.image"
-              class="card-img-top"
+              class="img-fluid shadow border"
               :alt="post.title"
-              height="500"
+              width="70%"
             />
-            <div class="card-body">
-              <h5 class="card-title">{{ post.title }}</h5>
-              <p class="card-text">{{ post.description }}</p>
-              <p class="card-text">
+        </div>  
+            <div class="col-12 d-flex align-items-center justify-content-between py-3">
+              <h3>{{ post.title }}</h3>
+              <p>Creato il: 
                 <small class="text-muted">{{ updated_at }}</small>
               </p>
             </div>
-          </div>
-        </div>  
+           <div class="col-12">
+         <p> {{ post.description }}</p>
+        </div>
       </div>
     </div>
   </section>
@@ -80,10 +79,6 @@ export default {
 
 <style scoped lang="scss">
 #post-detail {
-   height: 70vh;
-  img {
-    object-fit: cover;
-    object-position: center;
-  }
+  margin: 20px 0;
 }
 </style>
