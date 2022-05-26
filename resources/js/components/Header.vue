@@ -23,6 +23,9 @@
               <router-link class="nav-link" aria-current="page" :to="{name: 'home-portfolio'}">Portfolio</router-link>
             </li>
             <li class="nav-item">
+              <router-link class="nav-link " aria-current="page" :to="{name: 'home-bio'}">Biografia</router-link>
+            </li>
+            <li class="nav-item">
               <router-link class="nav-link" aria-current="page" :to="{name: 'contact-page'}">Contattami</router-link>
             </li>
           </ul>
