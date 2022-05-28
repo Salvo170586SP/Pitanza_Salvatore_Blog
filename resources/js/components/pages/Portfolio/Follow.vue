@@ -4,11 +4,11 @@
       <div class="row">
         <div class="col-12 d-flex justify-content-center">
           <div
-            class="d-flex align-items-center rounded border shadow bg-light"
+            class="d-flex align-items-center rounded border shadow bg-pb"
             style="width: 50rem"
           >
             <img
-              src="images/logo.jpeg"
+              src="images/logo2.png"
               width="200px"
               alt="logo"
               class="img-fluid"
@@ -33,9 +33,12 @@ export default {
 
 <style scoped lang="scss">
 #follow{
-    background-image: linear-gradient(to top, #000a3e 50%, white 50%);
-    height: 30vh;
+    background-image: linear-gradient(to top, #000A3C 30%, azure 101%);    height: 30vh;
     display: flex;
     align-items: center;
+
+    .bg-pb{
+      background-color: white;
+    }
 }
 </style>

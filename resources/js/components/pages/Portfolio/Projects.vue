@@ -3,7 +3,7 @@
     <div class="container">
       <div class="row">
         <div class="col-12 py-4 text-center">
-          <h2>Alcuni dei progetti realizzati </h2>
+          <h2>Alcuni dei progetti realizzati</h2>
         </div>
 
         <div
@@ -24,11 +24,12 @@
                 src="https://banksiafdn.com/wp-content/uploads/2019/10/placeholde-image.jpg"
                 class="card-img-top img-fluid shadow"
                 :alt="project.title"
-                
               />
             </figure>
             <div class="card-body">
-              <h5 class="card-title text-muted text-center py-2 fw-bold">{{ project.title }}</h5>
+              <h5 class="card-title text-muted text-center py-2 fw-bold">
+                {{ project.title }}
+              </h5>
               <span
                 v-for="language in project.languages"
                 :key="language.id"
@@ -37,14 +38,12 @@
                 {{ language.name }}
               </span>
             </div>
-            <div class="col-12 d-flex align-items-end p-3">
               <router-link
                 :to="{ name: 'project-detail', params: { id: project.id } }"
-                class="btn btn-sm btn-primary text-light shadow"
+                class="btn btn-sm btn-primary text-light fs-6 fw-bold py-2"
                 ><i class="fa-solid fa-magnifying-glass"></i> Scopri i
                 dettagli</router-link
               >
-            </div>
           </div>
         </div>
       </div>
@@ -85,14 +84,16 @@ export default {
 <style scoped lang="scss">
 .card {
   border: 1px solid lightgray;
-    transition: transform 0.8s;
+  border-radius: 20px;
+  overflow: hidden;
+  transition: transform 0.8s;
   &:hover {
     transform: translateY(-15px);
   }
   img {
-     height: 150px;
+    height: 150px;
     object-fit: cover;
     object-position: center;
-  } 
+  }
 }
 </style>

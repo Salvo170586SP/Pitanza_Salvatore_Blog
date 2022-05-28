@@ -5644,6 +5644,127 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: "HomeBio"
 });
@@ -6074,7 +6195,6 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-//
 //
 //
 //
@@ -11603,7 +11723,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../../node_modules/c
 
 
 // module
-exports.push([module.i, "#home-bio[data-v-cc0bfd48] {\n  padding: 70px 0;\n}\n#home-bio .img-bio[data-v-cc0bfd48] {\n  height: 300px;\n  width: 300px;\n  -o-object-fit: cover;\n     object-fit: cover;\n  border-radius: 50%;\n  -o-object-position: center;\n     object-position: center;\n}", ""]);
+exports.push([module.i, ".splide #home-bio[data-v-cc0bfd48] {\n  padding: 70px 0;\n}\n.splide #home-bio .scroller[data-v-cc0bfd48] {\n  max-width: 390px;\n  padding: 10px;\n  display: grid;\n  grid-auto-flow: column;\n  -moz-column-gap: 1rem;\n       column-gap: 1rem;\n  overflow-x: auto;\n}\n.splide #home-bio scroller[data-v-cc0bfd48]::-webkit-scrollbar {\n  display: none;\n}\n.splide #home-bio .scroller-item[data-v-cc0bfd48] {\n  position: relative;\n  width: 100px;\n  height: 100px;\n  border: 4px solid black;\n  border-radius: 50%;\n}\n.splide #home-bio .img-bio[data-v-cc0bfd48] {\n  height: 300px;\n  width: 300px;\n  -o-object-fit: cover;\n     object-fit: cover;\n  border-radius: 50%;\n  -o-object-position: center;\n     object-position: center;\n}", ""]);
 
 // exports
 
@@ -11660,7 +11780,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../../node_modules/c
 
 
 // module
-exports.push([module.i, "#follow[data-v-04902c0e] {\n  background-image: linear-gradient(to top, #000a3e 50%, white 50%);\n  height: 30vh;\n  display: flex;\n  align-items: center;\n}", ""]);
+exports.push([module.i, "#follow[data-v-04902c0e] {\n  background-image: linear-gradient(to top, #000A3C 30%, azure 101%);\n  height: 30vh;\n  display: flex;\n  align-items: center;\n}\n#follow .bg-pb[data-v-04902c0e] {\n  background-color: white;\n}", ""]);
 
 // exports
 
@@ -11717,7 +11837,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../../node_modules/c
 
 
 // module
-exports.push([module.i, ".card[data-v-2787ff17] {\n  border: 1px solid lightgray;\n  transition: transform 0.8s;\n}\n.card[data-v-2787ff17]:hover {\n  transform: translateY(-15px);\n}\n.card img[data-v-2787ff17] {\n  height: 150px;\n  -o-object-fit: cover;\n     object-fit: cover;\n  -o-object-position: center;\n     object-position: center;\n}", ""]);
+exports.push([module.i, ".card[data-v-2787ff17] {\n  border: 1px solid lightgray;\n  border-radius: 20px;\n  overflow: hidden;\n  transition: transform 0.8s;\n}\n.card[data-v-2787ff17]:hover {\n  transform: translateY(-15px);\n}\n.card img[data-v-2787ff17] {\n  height: 150px;\n  -o-object-fit: cover;\n     object-fit: cover;\n  -o-object-position: center;\n     object-position: center;\n}", ""]);
 
 // exports
 
@@ -44978,111 +45098,152 @@ var render = function () {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _vm._m(0)
+  return _c("section", { attrs: { id: "home-bio" } }, [
+    _c("div", { staticClass: "container" }, [
+      _c("div", { staticClass: "row" }, [
+        _c(
+          "div",
+          { staticClass: "col-12" },
+          [
+            _c(
+              "swiper",
+              {
+                staticClass: "mySwiper",
+                attrs: {
+                  slidesPerView: 3,
+                  spaceBetween: 30,
+                  freeMode: true,
+                  pagination: {
+                    clickable: true,
+                  },
+                  modules: _vm.modules,
+                },
+              },
+              [
+                _c("swiper-slide", [_vm._v("Slide 1")]),
+                _c("swiper-slide", [_vm._v("Slide 2")]),
+                _c("swiper-slide", [_vm._v("Slide 3")]),
+                _c("swiper-slide", [_vm._v("Slide 4")]),
+                _c("swiper-slide", [_vm._v("Slide 5")]),
+                _c("swiper-slide", [_vm._v("Slide 6")]),
+                _c("swiper-slide", [_vm._v("Slide 7")]),
+                _c("swiper-slide", [_vm._v("Slide 8")]),
+                _c("swiper-slide", [_vm._v("Slide 9")]),
+              ],
+              1
+            ),
+          ],
+          1
+        ),
+        _vm._v(" "),
+        _vm._m(0),
+        _vm._v(" "),
+        _vm._m(1),
+      ]),
+    ]),
+  ])
 }
 var staticRenderFns = [
   function () {
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("section", { attrs: { id: "home-bio" } }, [
-      _c("div", { staticClass: "container" }, [
-        _c("div", { staticClass: "row" }, [
-          _c("div", { staticClass: "col-9" }, [
-            _c("h3", { staticClass: "py-4" }, [_vm._v("MI RACCONTO")]),
-            _vm._v(" "),
-            _c("p", [
-              _vm._v(
-                "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique soluta dolor dignissimos culpa dicta aperiam, sed necessitatibus, ipsam quisquam reprehenderit deserunt cumque deleniti minus eveniet officiis. Aliquam iste reiciendis rem."
-              ),
-            ]),
-            _vm._v(" "),
-            _c("p", [
-              _vm._v(
-                "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique soluta dolor dignissimos culpa dicta aperiam, sed necessitatibus, ipsam quisquam reprehenderit deserunt cumque deleniti minus eveniet officiis. Aliquam iste reiciendis rem."
-              ),
-            ]),
-            _vm._v(" "),
-            _c("p", [
-              _vm._v(
-                "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique soluta dolor dignissimos culpa dicta aperiam, sed necessitatibus, ipsam quisquam reprehenderit deserunt cumque deleniti minus eveniet officiis. Aliquam iste reiciendis rem."
-              ),
-            ]),
-            _vm._v(" "),
-            _c("p", [
-              _vm._v(
-                "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique soluta dolor dignissimos culpa dicta aperiam, sed necessitatibus, ipsam quisquam reprehenderit deserunt cumque deleniti minus eveniet officiis. Aliquam iste reiciendis rem."
-              ),
-            ]),
-            _vm._v(" "),
-            _c("p", [
-              _vm._v(
-                "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique soluta dolor dignissimos culpa dicta aperiam, sed necessitatibus, ipsam quisquam reprehenderit deserunt cumque deleniti minus eveniet officiis. Aliquam iste reiciendis rem."
-              ),
-            ]),
-            _vm._v(" "),
-            _c("p", [
-              _vm._v(
-                "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique soluta dolor dignissimos culpa dicta aperiam, sed necessitatibus, ipsam quisquam reprehenderit deserunt cumque deleniti minus eveniet officiis. Aliquam iste reiciendis rem."
-              ),
-            ]),
-            _vm._v(" "),
-            _c("p", [
-              _vm._v(
-                "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique soluta dolor dignissimos culpa dicta aperiam, sed necessitatibus, ipsam quisquam reprehenderit deserunt cumque deleniti minus eveniet officiis. Aliquam iste reiciendis rem."
-              ),
-            ]),
-            _vm._v(" "),
-            _c("p", [
-              _vm._v(
-                "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique soluta dolor dignissimos culpa dicta aperiam, sed necessitatibus, ipsam quisquam reprehenderit deserunt cumque deleniti minus eveniet officiis. Aliquam iste reiciendis rem."
-              ),
-            ]),
-            _vm._v(" "),
-            _c("p", [
-              _vm._v(
-                "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique soluta dolor dignissimos culpa dicta aperiam, sed necessitatibus, ipsam quisquam reprehenderit deserunt cumque deleniti minus eveniet officiis. Aliquam iste reiciendis rem."
-              ),
-            ]),
-            _vm._v(" "),
-            _c("p", [
-              _vm._v(
-                "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique soluta dolor dignissimos culpa dicta aperiam, sed necessitatibus, ipsam quisquam reprehenderit deserunt cumque deleniti minus eveniet officiis. Aliquam iste reiciendis rem."
-              ),
-            ]),
-            _vm._v(" "),
-            _c("p", [
-              _vm._v(
-                "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique soluta dolor dignissimos culpa dicta aperiam, sed necessitatibus, ipsam quisquam reprehenderit deserunt cumque deleniti minus eveniet officiis. Aliquam iste reiciendis rem."
-              ),
-            ]),
-            _vm._v(" "),
-            _c("p", [
-              _vm._v(
-                "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique soluta dolor dignissimos culpa dicta aperiam, sed necessitatibus, ipsam quisquam reprehenderit deserunt cumque deleniti minus eveniet officiis. Aliquam iste reiciendis rem."
-              ),
-            ]),
-          ]),
-          _vm._v(" "),
-          _c("div", { staticClass: "col-3" }, [
-            _c("img", {
-              staticClass: "img-fluid shadow border img-bio",
-              attrs: {
-                src: "images/140731356_4380348161981271_7614192049077160206_n.jpg",
-                alt: "img_bio",
-              },
-            }),
-            _vm._v(" "),
-            _c("div", { staticClass: "my-4" }, [
-              _c("p", [_vm._v("La citazione che più mi raffigura")]),
-              _vm._v(" "),
-              _c("cite", [
-                _vm._v(
-                  "\n            “Troverai più nei boschi che nei libri. Gli alberi e le rocce ti insegneranno cose che nessun maestro ti dirà” - Bernardo di Chiaravalle\n        "
-                ),
-              ]),
-            ]),
-          ]),
+    return _c("div", { staticClass: "col-9" }, [
+      _c("h3", { staticClass: "py-4" }, [_vm._v("MI RACCONTO")]),
+      _vm._v(" "),
+      _c("p", [
+        _vm._v(
+          "\n          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique\n          soluta dolor dignissimos culpa dicta aperiam, sed necessitatibus,\n          ipsam quisquam reprehenderit deserunt cumque deleniti minus eveniet\n          officiis. Aliquam iste reiciendis rem.\n        "
+        ),
+      ]),
+      _vm._v(" "),
+      _c("p", [
+        _vm._v(
+          "\n          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique\n          soluta dolor dignissimos culpa dicta aperiam, sed necessitatibus,\n          ipsam quisquam reprehenderit deserunt cumque deleniti minus eveniet\n          officiis. Aliquam iste reiciendis rem.\n        "
+        ),
+      ]),
+      _vm._v(" "),
+      _c("p", [
+        _vm._v(
+          "\n          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique\n          soluta dolor dignissimos culpa dicta aperiam, sed necessitatibus,\n          ipsam quisquam reprehenderit deserunt cumque deleniti minus eveniet\n          officiis. Aliquam iste reiciendis rem.\n        "
+        ),
+      ]),
+      _vm._v(" "),
+      _c("p", [
+        _vm._v(
+          "\n          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique\n          soluta dolor dignissimos culpa dicta aperiam, sed necessitatibus,\n          ipsam quisquam reprehenderit deserunt cumque deleniti minus eveniet\n          officiis. Aliquam iste reiciendis rem.\n        "
+        ),
+      ]),
+      _vm._v(" "),
+      _c("p", [
+        _vm._v(
+          "\n          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique\n          soluta dolor dignissimos culpa dicta aperiam, sed necessitatibus,\n          ipsam quisquam reprehenderit deserunt cumque deleniti minus eveniet\n          officiis. Aliquam iste reiciendis rem.\n        "
+        ),
+      ]),
+      _vm._v(" "),
+      _c("p", [
+        _vm._v(
+          "\n          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique\n          soluta dolor dignissimos culpa dicta aperiam, sed necessitatibus,\n          ipsam quisquam reprehenderit deserunt cumque deleniti minus eveniet\n          officiis. Aliquam iste reiciendis rem.\n        "
+        ),
+      ]),
+      _vm._v(" "),
+      _c("p", [
+        _vm._v(
+          "\n          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique\n          soluta dolor dignissimos culpa dicta aperiam, sed necessitatibus,\n          ipsam quisquam reprehenderit deserunt cumque deleniti minus eveniet\n          officiis. Aliquam iste reiciendis rem.\n        "
+        ),
+      ]),
+      _vm._v(" "),
+      _c("p", [
+        _vm._v(
+          "\n          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique\n          soluta dolor dignissimos culpa dicta aperiam, sed necessitatibus,\n          ipsam quisquam reprehenderit deserunt cumque deleniti minus eveniet\n          officiis. Aliquam iste reiciendis rem.\n        "
+        ),
+      ]),
+      _vm._v(" "),
+      _c("p", [
+        _vm._v(
+          "\n          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique\n          soluta dolor dignissimos culpa dicta aperiam, sed necessitatibus,\n          ipsam quisquam reprehenderit deserunt cumque deleniti minus eveniet\n          officiis. Aliquam iste reiciendis rem.\n        "
+        ),
+      ]),
+      _vm._v(" "),
+      _c("p", [
+        _vm._v(
+          "\n          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique\n          soluta dolor dignissimos culpa dicta aperiam, sed necessitatibus,\n          ipsam quisquam reprehenderit deserunt cumque deleniti minus eveniet\n          officiis. Aliquam iste reiciendis rem.\n        "
+        ),
+      ]),
+      _vm._v(" "),
+      _c("p", [
+        _vm._v(
+          "\n          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique\n          soluta dolor dignissimos culpa dicta aperiam, sed necessitatibus,\n          ipsam quisquam reprehenderit deserunt cumque deleniti minus eveniet\n          officiis. Aliquam iste reiciendis rem.\n        "
+        ),
+      ]),
+      _vm._v(" "),
+      _c("p", [
+        _vm._v(
+          "\n          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique\n          soluta dolor dignissimos culpa dicta aperiam, sed necessitatibus,\n          ipsam quisquam reprehenderit deserunt cumque deleniti minus eveniet\n          officiis. Aliquam iste reiciendis rem.\n        "
+        ),
+      ]),
+    ])
+  },
+  function () {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "col-3" }, [
+      _c("img", {
+        staticClass: "img-fluid shadow border img-bio",
+        attrs: {
+          src: "images/140731356_4380348161981271_7614192049077160206_n.jpg",
+          alt: "img_bio",
+        },
+      }),
+      _vm._v(" "),
+      _c("div", { staticClass: "my-4" }, [
+        _c("p", [_vm._v("La citazione che più mi raffigura")]),
+        _vm._v(" "),
+        _c("cite", [
+          _vm._v(
+            "\n            “Troverai più nei boschi che nei libri. Gli alberi e le rocce ti\n            insegneranno cose che nessun maestro ti dirà” - Bernardo di\n            Chiaravalle\n          "
+          ),
         ]),
       ]),
     ])
@@ -45390,14 +45551,14 @@ var staticRenderFns = [
               "div",
               {
                 staticClass:
-                  "d-flex align-items-center rounded border shadow bg-light",
+                  "d-flex align-items-center rounded border shadow bg-pb",
                 staticStyle: { width: "50rem" },
               },
               [
                 _c("img", {
                   staticClass: "img-fluid",
                   attrs: {
-                    src: "images/logo.jpeg",
+                    src: "images/logo2.png",
                     width: "200px",
                     alt: "logo",
                   },
@@ -45730,7 +45891,13 @@ var render = function () {
                             staticClass:
                               "card-title text-muted text-center py-2 fw-bold",
                           },
-                          [_vm._v(_vm._s(project.title))]
+                          [
+                            _vm._v(
+                              "\n              " +
+                                _vm._s(project.title) +
+                                "\n            "
+                            ),
+                          ]
                         ),
                         _vm._v(" "),
                         _vm._l(project.languages, function (language) {
@@ -45756,32 +45923,26 @@ var render = function () {
                     ),
                     _vm._v(" "),
                     _c(
-                      "div",
-                      { staticClass: "col-12 d-flex align-items-end p-3" },
-                      [
-                        _c(
-                          "router-link",
-                          {
-                            staticClass:
-                              "btn btn-sm btn-primary text-light shadow",
-                            attrs: {
-                              to: {
-                                name: "project-detail",
-                                params: { id: project.id },
-                              },
-                            },
+                      "router-link",
+                      {
+                        staticClass:
+                          "btn btn-sm btn-primary text-light fs-6 fw-bold py-2",
+                        attrs: {
+                          to: {
+                            name: "project-detail",
+                            params: { id: project.id },
                           },
-                          [
-                            _c("i", {
-                              staticClass: "fa-solid fa-magnifying-glass",
-                            }),
-                            _vm._v(" Scopri i\n              dettagli"),
-                          ]
-                        ),
-                      ],
-                      1
+                        },
+                      },
+                      [
+                        _c("i", {
+                          staticClass: "fa-solid fa-magnifying-glass",
+                        }),
+                        _vm._v(" Scopri i\n              dettagli"),
+                      ]
                     ),
-                  ]
+                  ],
+                  1
                 ),
               ]
             )
@@ -45798,7 +45959,7 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("div", { staticClass: "col-12 py-4 text-center" }, [
-      _c("h2", [_vm._v("Alcuni dei progetti realizzati ")]),
+      _c("h2", [_vm._v("Alcuni dei progetti realizzati")]),
     ])
   },
 ]
