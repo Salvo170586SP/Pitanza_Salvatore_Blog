@@ -5157,13 +5157,13 @@ __webpack_require__.r(__webpack_exports__);
         var scrolled = window.scrollY;
         /* console.log('scrolled: ' + scrolled); */
 
-        var arrow = document.getElementById("top");
+        var arrow = document.getElementById("top"); //se lo scroll arriva a 399
 
         if (Math.ceil(scrolled) > 399) {
+          //aggiungo la classe show
           arrow.classList.add("show");
-        }
-
-        if (Math.ceil(scrolled) < 399) {
+        } else if (Math.ceil(scrolled) < 399) {
+          //altrimenti se è minore tolgo la classe show
           arrow.classList.remove("show");
         }
       });

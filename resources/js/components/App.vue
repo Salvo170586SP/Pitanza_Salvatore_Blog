@@ -29,10 +29,12 @@ export default {
 
         const arrow = document.getElementById("top");
 
+        //se lo scroll arriva a 399
         if (Math.ceil(scrolled) > 399) {
+          //aggiungo la classe show
           arrow.classList.add("show");
-        }
-        if (Math.ceil(scrolled) < 399) {
+        }else if(Math.ceil(scrolled) < 399){
+          //altrimenti se è minore tolgo la classe show
           arrow.classList.remove("show");
         }
       });
