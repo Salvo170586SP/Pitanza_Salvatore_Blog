@@ -3,105 +3,63 @@
     <div class="container">
       <div class="row">
         <div class="col-12">
-
-
-          <swiper
-            :slidesPerView="3"
-            :spaceBetween="30"
-            :freeMode="true"
-            :pagination="{
-              clickable: true,
-            }"
-            :modules="modules"
-            class="mySwiper"
-          >
-            <swiper-slide>Slide 1</swiper-slide
-            ><swiper-slide>Slide 2</swiper-slide
-            ><swiper-slide>Slide 3</swiper-slide
-            ><swiper-slide>Slide 4</swiper-slide
-            ><swiper-slide>Slide 5</swiper-slide
-            ><swiper-slide>Slide 6</swiper-slide
-            ><swiper-slide>Slide 7</swiper-slide
-            ><swiper-slide>Slide 8</swiper-slide
-            ><swiper-slide>Slide 9</swiper-slide>
-          </swiper>
-
-
-
+         
         </div>
         <div class="col-9">
           <h3 class="py-4">MI RACCONTO</h3>
           <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique
-            soluta dolor dignissimos culpa dicta aperiam, sed necessitatibus,
-            ipsam quisquam reprehenderit deserunt cumque deleniti minus eveniet
-            officiis. Aliquam iste reiciendis rem.
+            Mi chiamo Salvatore Pitanza, <br />
+            il mio percorso nel settore informatico è stato lungo e a tratti
+            tortuoso, ma con una passione che non è mai passata, anzi, è sempre
+            un continuo crescere con il passare degli anni. <br />
+            Il mio primo approccio con il mondo dei pc risale ai lontani anni 80
+            quando il mondo era dominato dai Commodor e dai Vic 20. <br />
+            Difatti questi due sono stati i miei primi computer con cui da
+            piccolo ho potuto sperimentare i primi interminabili comandi per
+            avviare i giochi registrati sui nastri delle cassette. Un gioiellino
+            all'epoca, ma tutt'ora ancora ricordato come un vero e proprio pezzo
+            da museo che ognuno dovrebbe esporre. <br />
+            Dopo anni, nei primi del 2000 ho iniziato a instaurare un rapporto
+            più solido con la moderna informatica cercando di smanettare con i
+            componenti e a formattare pc periodicamente. <br />
+            Fu con l'approccio al mondo del web che ha rimescolato le carte,
+            spulciando sui vari forum inziai a capire come funzionarono le
+            pagine web e mi scontrai con i linguaggi di markup html, css. <br />
+            Decisi così nel 2005 di iscrivermi a un corso di Web Master, ma non ne fui molto soddisfatto, per
+            conto della scarsa organizzazione del corso e dal tipo di lezioni
+            svolte.
+            <br />
+            Cercai così dopo una lunga pausa, di cambiare totalmente strada dove
+            la vita mi portò a fare tutt'altro, entrando nel mondo del sociale e
+            dare una mano alle persone meno fortunate. Ma nel 2020...
           </p>
+
+          <h3 class="pt-5">Il percorso in Boolean Careers</h3>
           <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique
-            soluta dolor dignissimos culpa dicta aperiam, sed necessitatibus,
-            ipsam quisquam reprehenderit deserunt cumque deleniti minus eveniet
-            officiis. Aliquam iste reiciendis rem.
+            La pandemia ha portato un pò tutti a svoltare le nostre vite, e di
+            certo non sono stato con le mani in mano, tra una lettura e l'altra,
+            tra un video tutorial e l'altro riaffiora quella passione innata
+            che non è mai svanita, ma anzi...cresceva sempre di più. <br />
+            Ed improvvisamente, come se fosse stato un segno del destino, mi accorsi di questa accademia online, incuriosito, ho indagato fino a convincermi di intraprendere questo interessante percorso. <br>
           </p>
+          <h4>
+            Le mie competenze
+          </h4>
           <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique
-            soluta dolor dignissimos culpa dicta aperiam, sed necessitatibus,
-            ipsam quisquam reprehenderit deserunt cumque deleniti minus eveniet
-            officiis. Aliquam iste reiciendis rem.
+            Ho appreso le basi delle seguenti skills: html, css, Bootstrap, javascript, VueJs, php, Laravel e mySql.
+            Il grado di apprendimento si può intuire da dove stai leggendo. Questo sito/blog è stato messo in piedi con Laravel e VueJs. <br>
+            Il percorso è una strada in salita ma l'entusiasmo e la passione non mancheranno.
+            E chissà cosa mi riserverà ancora in futuro. <br> Di certo questo settore ha portato la mia vità a crearmi degli obbiettivi ed avere uno scopo ben preciso, essere un professionista nel settore. <br>
+            Cosa che fino a non molto tempo fa non pensavo di raggiungere. <br>
+             E tutto questo grazie ai ragazzi di Boolean, dove con la loro professionalità e la loro umanità mi hanno accompagnato in un mondo nuovo ed entusiasmante.
           </p>
+
+          <h3 class="pt-5">La vita oltre al coding</h3>
           <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique
-            soluta dolor dignissimos culpa dicta aperiam, sed necessitatibus,
-            ipsam quisquam reprehenderit deserunt cumque deleniti minus eveniet
-            officiis. Aliquam iste reiciendis rem.
-          </p>
-          <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique
-            soluta dolor dignissimos culpa dicta aperiam, sed necessitatibus,
-            ipsam quisquam reprehenderit deserunt cumque deleniti minus eveniet
-            officiis. Aliquam iste reiciendis rem.
-          </p>
-          <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique
-            soluta dolor dignissimos culpa dicta aperiam, sed necessitatibus,
-            ipsam quisquam reprehenderit deserunt cumque deleniti minus eveniet
-            officiis. Aliquam iste reiciendis rem.
-          </p>
-          <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique
-            soluta dolor dignissimos culpa dicta aperiam, sed necessitatibus,
-            ipsam quisquam reprehenderit deserunt cumque deleniti minus eveniet
-            officiis. Aliquam iste reiciendis rem.
-          </p>
-          <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique
-            soluta dolor dignissimos culpa dicta aperiam, sed necessitatibus,
-            ipsam quisquam reprehenderit deserunt cumque deleniti minus eveniet
-            officiis. Aliquam iste reiciendis rem.
-          </p>
-          <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique
-            soluta dolor dignissimos culpa dicta aperiam, sed necessitatibus,
-            ipsam quisquam reprehenderit deserunt cumque deleniti minus eveniet
-            officiis. Aliquam iste reiciendis rem.
-          </p>
-          <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique
-            soluta dolor dignissimos culpa dicta aperiam, sed necessitatibus,
-            ipsam quisquam reprehenderit deserunt cumque deleniti minus eveniet
-            officiis. Aliquam iste reiciendis rem.
-          </p>
-          <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique
-            soluta dolor dignissimos culpa dicta aperiam, sed necessitatibus,
-            ipsam quisquam reprehenderit deserunt cumque deleniti minus eveniet
-            officiis. Aliquam iste reiciendis rem.
-          </p>
-          <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique
-            soluta dolor dignissimos culpa dicta aperiam, sed necessitatibus,
-            ipsam quisquam reprehenderit deserunt cumque deleniti minus eveniet
-            officiis. Aliquam iste reiciendis rem.
+            La mia seconda vita la passo sulle montagne, passione che viaggia su un binario parallelo. <br>
+            La Sicilia è comunemente conosciuta per le sue spiagge e il suo mare estivo, ma oltre a questo ha un paesaggio montano incredibile. Forse unico, sia per il suo aspetto storico, ma sopratutto perchè detiene il più alto tasso di biodiversità in Europa. <br>
+            Grazie ai vari eventi effettuati da AtridNatura e dalla bravissima guida du FederEscursioni Davide Mangano (clicca qui), scoprirete una terra unica fatta di contrasti, passando dalle infinite praterie alle verdissime vette che si affacciano sul mediterraneo. <br>
+            Pubblicherò in futuro immagini e ulteriori dettagli.
           </p>
         </div>
 
@@ -125,37 +83,6 @@
   </section>
 </template>
 
-
-
-<script>
-// Import Swiper Vue.js components
-import { Swiper, SwiperSlide } from "swiper/vue";
-
-// Import Swiper styles
-import "swiper/css";
-
-import "swiper/css/free-mode";
-import "swiper/css/pagination";
-
-import "./style.css";
-
-// import required modules
-import { FreeMode, Pagination } from "swiper";
-
-export default {
-  components: {
-    Swiper,
-    SwiperSlide,
-  },
-  setup() {
-    return {
-      modules: [FreeMode, Pagination],
-    };
-  },
-};
-</script>
-
-
 <script>
 export default {
   name: "HomeBio",
@@ -163,34 +90,14 @@ export default {
 </script>
 
 <style scoped lang="scss">
-.splide #home-bio {
+#home-bio {
   padding: 70px 0;
-
-  .scroller {
-    max-width: 390px;
-    padding: 10px;
-    display: grid;
-    grid-auto-flow: column;
-    column-gap: 1rem;
-    overflow-x: auto;
-  }
-  scroller::-webkit-scrollbar {
-    display: none;
-  }
-
-  .scroller-item {
-    position: relative;
-    width: 100px;
-    height: 100px;
-    border: 4px solid black;
-    border-radius: 50%;
-  }
 
   .img-bio {
     height: 300px;
     width: 300px;
     object-fit: cover;
-    border-radius: 50%;
+    border-radius: 10%;
     object-position: center;
   }
 }

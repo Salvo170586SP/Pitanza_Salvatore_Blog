@@ -10,14 +10,16 @@
         </div>
         <div class="col-12 text-center">
           <img
+          @click="clickImg"
             :src="/storage/ + project.img"
             :alt="project.title"
-            class="img-fluid shadow border"
+            class="img-fluid border"
             width="70%"
           />
+          <figcaption>*clicca sull'immagine per ingrandire</figcaption>
         </div>
         <div
-          class="col-12 d-flex align-items-center justify-content-between py-3"
+          class="col-12 d-flex align-items-center justify-content-between py-5"
         >
           <h3>{{ project.title }}</h3>
           <p>
@@ -30,10 +32,10 @@
             >
           </p>
         </div>
-        <div class="col-12 py-3">
+        <div class="col-12">
           <a class="btn btn-secondary" target="_blank" :href="project.url"><i class="fa-solid fa-cloud-arrow-down"></i> Scarica la repository</a>
         </div>
-        <div class="col-12">
+        <div class="col-12 py-5 fs-5">
          <p> {{ project.description }}</p>
         </div>
       </div>
@@ -55,6 +57,19 @@ export default {
     };
   },
   methods: {
+
+    clickImg() {
+      addEventListener("click", function (e) {
+       /* e.target.classList.remove("active"); */  
+        e.target.classList.toggle("active");
+
+        // se clicco fuori riduco l'immagine
+        this.window.addEventListener("click", function () {
+          e.target.classList.toggle("active");
+        }); 
+      });
+    },
+
     getProject() {
       this.isLoading = true;
       axios
@@ -80,5 +95,15 @@ export default {
 <style scoped lang="scss">
 #project-detail {
   margin: 20px 0;
+  height: 90vh;
+
+  img{
+    transition: 0.5s ease;
+    cursor: pointer;
+    &.active{
+      transform: scale(1.5) translateY(35px);
+      box-shadow:grey 1px 1px 20px 10px;
+    }
+  }
 }
 </style>

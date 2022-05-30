@@ -166,7 +166,7 @@ export default {
   height: 80vh;
   background: radial-gradient(#5b25a3, #000000);
   color: white;
-  padding-top: 50px;
+  padding-top: 100px;
   p {
     text-align: justify;
   }

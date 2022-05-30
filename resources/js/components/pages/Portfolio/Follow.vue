@@ -33,7 +33,7 @@ export default {
 
 <style scoped lang="scss">
 #follow{
-    background-image: linear-gradient(to top, #000A3C 30%, azure 101%);    height: 30vh;
+    background-image: linear-gradient(to top, #000A3C 50%, #a7f7f7 0%);
     display: flex;
     align-items: center;
 

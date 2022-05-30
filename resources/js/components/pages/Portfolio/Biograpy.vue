@@ -30,6 +30,7 @@ export default {
 
 <style scoped lang="scss">
 #biograpy {
+
   p {
     text-align: justify;
   }

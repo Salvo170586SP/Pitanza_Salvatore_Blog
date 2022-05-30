@@ -6,12 +6,11 @@
           <h2>Ultime notizie</h2>
         </div>
 
-         <div v-if="!this.posts.length" class="text-center">
-          <h2>Non ci sono post</h2>
-        </div>
-        <div v-else>
         <div class="row" v-if="!isLoading">
-          <Pagination :pagination="pagination" @on-page-change="getPosts" />
+          <div v-if="!this.posts.length" class="text-center">
+            <h2>Non ci sono post</h2>
+          </div>
+          <Pagination v-else :pagination="pagination" @on-page-change="getPosts" />
           <CardFeed v-for="post in posts" :key="post.id" :post="post" />
         </div>
         <PlaceholderCard v-else />
@@ -27,6 +26,7 @@ import CardFeed from "./CardFeed.vue";
 import PlaceholderCard from "./PlaceholderCard.vue";
 import Pagination from "./Pagination.vue";
 
+
 export default {
   name: "SectionFeeds",
   components: {
@@ -39,7 +39,6 @@ export default {
       posts: [],
       pagination: {},
       isLoading: false,
-      isNotPosts: false,
     };
   },
   methods: {

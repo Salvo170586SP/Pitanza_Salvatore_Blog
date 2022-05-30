@@ -22,6 +22,9 @@ const router = new VueRouter({
         { path: '/projects/:id', component: ProjectDetail, name: 'project-detail'},
         { path: '/home-bio', component: HomeBio, name: 'home-bio'},
     ],
+    scrollBehavior(to, from, savedPosition) {
+        return { x: 0, y: 0 }
+    }
 })
 
 export default router;

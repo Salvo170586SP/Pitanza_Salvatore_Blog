@@ -1,21 +1,19 @@
 <template>
-  <div>
+  <div id="home-proj">
     <Jumbotron />
     <SectionFeeds />
   </div>
 </template>
 
 <script>
-import Jumbotron from '../Jumbotron.vue';
-import SectionFeeds from '../SectionFeeds.vue';
+import Jumbotron from "../Jumbotron.vue";
+import SectionFeeds from "../SectionFeeds.vue";
 export default {
   name: "HomePage",
   components: {
     Jumbotron,
-    SectionFeeds
+    SectionFeeds,
   },
 };
 </script>
 
-<style>
-</style>
