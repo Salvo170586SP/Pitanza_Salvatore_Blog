@@ -10,12 +10,14 @@
           <div v-if="!this.posts.length" class="text-center">
             <h2>Non ci sono post</h2>
           </div>
-          <Pagination v-else :pagination="pagination" @on-page-change="getPosts" />
+          <Pagination
+            v-else
+            :pagination="pagination"
+            @on-page-change="getPosts"
+          />
           <CardFeed v-for="post in posts" :key="post.id" :post="post" />
         </div>
         <PlaceholderCard v-else />
-
-        </div>
       </div>
     </div>
   </section>
@@ -25,7 +27,6 @@
 import CardFeed from "./CardFeed.vue";
 import PlaceholderCard from "./PlaceholderCard.vue";
 import Pagination from "./Pagination.vue";
-
 
 export default {
   name: "SectionFeeds",

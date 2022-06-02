@@ -4,7 +4,7 @@
     <div v-else class="container h-100">
       <div class="row h-100 align-items-center">
         <div class="col-12 my-3">
-          <router-link class="btn btn-primary text-light shadow" :to="{name: 'home'}"><i class="fa-solid fa-house"></i> Torna alla home</router-link>
+          <router-link class="btn btn-secondary text-light shadow" :to="{name: 'home'}"><i class="fa-solid fa-house"></i> Torna alla home</router-link>
         </div>
         <div class="col-12 text-center">
             <img

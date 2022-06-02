@@ -164,7 +164,7 @@ export default {
 <style scoped lang="scss">
 #skylls {
   height: 80vh;
-  background: radial-gradient(#5b25a3, #000000);
+  background: radial-gradient(#594c66, #000000);
   color: white;
   padding-top: 100px;
   p {

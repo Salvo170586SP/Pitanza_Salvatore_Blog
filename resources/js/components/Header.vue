@@ -1,8 +1,8 @@
 <template>
   <header class="shadow">
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg ">
       <div class="container-fluid">
-        <router-link class="navbar-brand" :to="{name: 'home'}"><img src="images/logo.jpeg" width="40" alt=""> PitanzaSalvatoreBlog</router-link>
+        <router-link class="navbar-brand" :to="{name: 'home-portfolio'}"><img src="images/logo2.png" width="40" alt="logo"> PS WebDeveloper</router-link>
         <button
           class="navbar-toggler"
           type="button"
@@ -16,11 +16,11 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav">
-            <li class="nav-item">
+            <!-- <li class="nav-item">
               <router-link class="nav-link active" aria-current="page" :to="{name: 'home'}">Home</router-link>
-            </li>
+            </li> -->
             <li class="nav-item">
-              <router-link class="nav-link" aria-current="page" :to="{name: 'home-portfolio'}">Portfolio</router-link>
+              <router-link class="nav-link" aria-current="page" :to="{name: 'home-portfolio'}">Home</router-link>
             </li>
             <li class="nav-item">
               <router-link class="nav-link " aria-current="page" :to="{name: 'home-bio'}">Biografia</router-link>
@@ -60,7 +60,7 @@ header{
   z-index: 10000;
 
   nav {
-        background-color: #232730;
+        background-color: #1f2126;
         a, .nav-link {
             color: #50b6c5;
             &:hover{

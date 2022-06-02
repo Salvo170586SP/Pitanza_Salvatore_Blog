@@ -4,7 +4,7 @@
       <div class="row">
         <div class="col-12 d-flex justify-content-center">
           <div
-            class="d-flex align-items-center rounded border shadow bg-pb"
+            class="d-flex align-items-center rounded border bg-pb"
             style="width: 50rem"
           >
             <img
@@ -33,11 +33,12 @@ export default {
 
 <style scoped lang="scss">
 #follow{
-    background-image: linear-gradient(to top, #000A3C 50%, #a7f7f7 0%);
+    background-image: linear-gradient(to top, #232730 50%, white 0%);
     display: flex;
     align-items: center;
 
     .bg-pb{
+      box-shadow: black 0px 0px 10px 0px;
       background-color: white;
     }
 }

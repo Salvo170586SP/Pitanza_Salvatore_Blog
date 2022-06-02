@@ -19,7 +19,7 @@
             <li class="nav-item"><h4>Menu</h4></li>
             <li class="nav-item">
               <router-link
-                :to="{ name: 'home' }"
+                :to="{name: 'home-portfolio'}"
                 class="nav-link text-light ps-0"
                 >Home</router-link
               >
@@ -27,8 +27,8 @@
             <li class="nav-item">
               <router-link
                 class="nav-link ps-0 text-light"
-                :to="{ name: 'home-portfolio' }"
-                >Portfolio</router-link
+                :to="{name: 'home-bio'}"
+                >Biografia</router-link
               >
             </li>
             <li class="nav-item">
@@ -90,7 +90,8 @@ export default {
 <style scoped lang="scss">
 footer {
   height: 30vh;
-  background-color: #000a3e;
+  /* background-color: #000a3e; */
+  background-color: #232730;
   color: white;
 }
 </style>

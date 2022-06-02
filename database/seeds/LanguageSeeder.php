@@ -13,15 +13,15 @@ class LanguageSeeder extends Seeder
     public function run()
     {
         $languages = [
-            ['name' => 'Html', 'color' => 'danger'],
-            ['name' => 'Css', 'color' => 'primary'],
-            ['name' => 'JS', 'color' => 'warning'],
+            ['name' => 'Html', 'color' => 'secondary'],
+            ['name' => 'Css', 'color' => 'secondary'],
+            ['name' => 'JS', 'color' => 'secondary'],
             ['name' => 'VueJS', 'color' => 'secondary'],
-            ['name' => 'Bootstrap', 'color' => 'primary'],
-            ['name' => 'Php', 'color' => 'primary'],
+            ['name' => 'Bootstrap', 'color' => 'secondary'],
+            ['name' => 'Php', 'color' => 'secondary'],
             ['name' => 'Laravel', 'color' => 'secondary'],
-            ['name' => 'MysQL', 'color' => 'light'],
-            ['name' => 'VSCode', 'color' => 'dark'],
+            ['name' => 'MysQL', 'color' => 'secondary'],
+            ['name' => 'VSCode', 'color' => 'secondary'],
         ];
 
         foreach($languages as $language){

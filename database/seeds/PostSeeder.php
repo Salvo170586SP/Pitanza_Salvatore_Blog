@@ -10,16 +10,23 @@ class PostSeeder extends Seeder
      *
      * @return void
      */
-    public function run(Generator $faker)
+    public function run()
     {
+
+
+           /*   $new_post = new Post();
+            $new_post->title = $faker->name();
+            $new_post->description = $faker->paragraph();
+            $new_post->image = $faker->imageUrl(640, 480, 'animals', true );
+            $new_post->save(); */
     
-        for($i = 0; $i < 50; $i++){
+        /* for($i = 0; $i < 50; $i++){
             $new_post = new Post();
             $new_post->title = $faker->name();
             $new_post->description = $faker->paragraph();
             $new_post->image = $faker->imageUrl(640, 480, 'animals', true );
             $new_post->save();
-        }
+        } */
         
     }
 }

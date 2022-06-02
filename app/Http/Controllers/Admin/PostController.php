@@ -49,7 +49,7 @@ class PostController extends Controller
         $request->validate([
             'title' => 'required|string|min:5|max:255',
             'description' => 'required|string|min:5',
-            'image' => 'required|image',
+            'image' => 'nullable|image',
         ], [
             'title.min' => 'il titolo deve avere almeno 5 caratteri',
             'description.min' => 'la descrizione deve avere almeno 5 caratteri',
@@ -104,7 +104,7 @@ class PostController extends Controller
         $request->validate([
             'title' => 'required|string|min:5|max:255',
             'description' => 'required|string|min:5',
-            'image' => 'required|image',
+            'image' => 'nullable|image',
         ], [
             'required' => 'il campo è obbligatorio',
             'title' => 'il titolo deve avere almeno 5 caratteri',

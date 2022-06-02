@@ -3,23 +3,29 @@
     <div class="card shadow my-3" style="width: 18rem">
       <figure>
         <img
+          v-if="post.image"
           :src="post.image"
-          class="card-img-top img-fluid"
+          class="card-img-top img-fluid shadow"
+          :alt="post.title"
+        />
+        <img
+          v-else
+          src="https://banksiafdn.com/wp-content/uploads/2019/10/placeholde-image.jpg"
+          class="card-img-top img-fluid shadow"
           :alt="post.title"
         />
       </figure>
       <div class="card-body">
-        <h5 class="card-title">{{ post.title }}</h5>
-        <span>{{ updated_at }}</span>
-        <div class="mt-3 text-end">
-        <router-link
-          class="btn btn-sm btn-primary text-light shadow"
-          :to="{ name: 'post-detail', params: { id: post.id } }"
-          ><i class="fa-solid fa-magnifying-glass"></i> Leggi
-          l'articolo</router-link
-        >
-        </div>
+        <h5 class="card-title text-muted text-center py-2 fw-bold">
+          {{ post.title }}
+        </h5>
       </div>
+      <router-link
+        :to="{ name: 'post-detail', params: { id: post.id } }"
+        class="btn btn-sm btn-primary text-light fs-6 fw-bold py-2"
+        ><i class="fa-solid fa-magnifying-glass"></i> Scopri i
+        dettagli</router-link
+      >
     </div>
   </div>
 </template>
@@ -48,16 +54,18 @@ export default {
 <style scoped lang="scss">
 .card {
   border: 1px solid silver;
-  figure {
-    img {
-      height: 150px;
-      object-fit: cover;
-      object-position: center;
-    }
-  }
+  border-radius: 15px;
+  overflow: hidden;
   transition: transform 0.8s;
+
   &:hover {
     transform: translateY(-15px);
+  }
+
+  img {
+    height: 150px;
+    object-fit: cover;
+    object-position: center;
   }
 }
 </style>

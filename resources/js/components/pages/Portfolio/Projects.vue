@@ -5,13 +5,16 @@
         <div class="col-12 py-4 text-center">
           <h2>Alcuni dei progetti realizzati</h2>
         </div>
-
+        <div v-if="!projects.length" class="col-12 text-center py-3">
+          <h4>Al momento non ci sono progetti caricati</h4>
+        </div>
         <div
+          v-else
           class="col-12 col-md-4 col-lg-3 d-flex justify-content-center"
           v-for="project in projects"
           :key="project.id"
         >
-          <div class="card shadow my-3" style="width: 18rem">
+          <div class="card my-3" style="width: 18rem">
             <figure>
               <img
                 v-if="project.img"
@@ -33,17 +36,17 @@
               <span
                 v-for="language in project.languages"
                 :key="language.id"
-                :class="`badge shadow text-dark mx-1 bg-${language.color}`"
+                :class="`badge  shadow text-light mx-1 bg-${language.color}`"
               >
                 {{ language.name }}
               </span>
             </div>
-              <router-link
-                :to="{ name: 'project-detail', params: { id: project.id } }"
-                class="btn btn-sm btn-primary text-light fs-6 fw-bold py-2"
-                ><i class="fa-solid fa-magnifying-glass"></i> Scopri i
-                dettagli</router-link
-              >
+            <router-link
+              :to="{ name: 'project-detail', params: { id: project.id } }"
+              class="btn btn-sm btn-secondary text-light fs-6 fw-bold py-2"
+              ><i class="fa-solid fa-magnifying-glass"></i> Scopri i
+              dettagli</router-link
+            >
           </div>
         </div>
       </div>
@@ -84,9 +87,10 @@ export default {
 <style scoped lang="scss">
 .card {
   border: 1px solid lightgray;
-  border-radius: 20px;
+  border-radius: 15px;
   overflow: hidden;
   transition: transform 0.8s;
+  box-shadow: grey 0px 0px 25px -3px;
   &:hover {
     transform: translateY(-15px);
   }

@@ -4,7 +4,7 @@
     <div v-else class="container h-100">
       <div class="row h-100 align-items-center">
         <div class="col-12 my-3">
-          <router-link class="btn text-light btn-primary" :to="{ name: 'home-portfolio' }"
+          <router-link class="btn text-light btn-secondary" :to="{ name: 'home-portfolio' }"
             ><i class="fa-solid fa-arrow-left"></i
           > Torna al portfolio</router-link>
         </div>
@@ -25,7 +25,7 @@
           <p>
             Tecnologie utilizzate:
             <span
-              :class="`badge shadow text-dark mx-1 bg-${language.color}`"
+              :class="`badge shadow text-light mx-1 bg-${language.color}`"
               v-for="language in project.languages"
               :key="language.id"
               >{{ language.name }}</span

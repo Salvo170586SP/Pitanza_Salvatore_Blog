@@ -51,7 +51,7 @@
             <button
               type="submit"
               @click="sendMail"
-              class="btn btn-primary text-light shadow my-3"
+              class="btn btn-secondary text-light shadow my-3"
             >
               Invia
             </button>
