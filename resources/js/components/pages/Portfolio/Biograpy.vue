@@ -2,7 +2,7 @@
   <section id="biograpy">
     <div class="container-fluid">
       <div class="row">
-        <div class="col-7 d-flex align-items-center shadow px-5">
+        <div class="col-12 col-md-5 z-i">
           <p>
             Mi chiamo Salvatore, sono un Jr. Web Developer grazie al percorso
             nella web accademy Boolean Careers. <br /><br />
@@ -13,9 +13,6 @@
             approfondire nel mondo delle interfacce web e nella progettazione
             dei layout, andare in Giappone!
           </p>
-        </div>
-        <div class="col-5 m-0 p-0 overflow-hidden">
-          <img src="images/IMG_20210314_104826.jpg" class="img-fluid" alt="" />
         </div>
       </div>
     </div>
@@ -30,18 +27,40 @@ export default {
 
 <style scoped lang="scss">
 #biograpy {
+  background-image: url("/images/IMG_20210314_104826.jpg");
+  height: 550px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  transition: 0.8s;
+  filter: grayscale(100%);
+  position: relative;
+  color: white;
+
+  &::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 100;
+    background-color: rgba(0, 0, 0, 0.521);
+  }
+
+  &:hover {
+    filter: grayscale(0%);
+  }
+
+  .z-i{
+    z-index: 100;
+  }
 
   p {
+    padding: 50px;
     text-align: justify;
-  }
-
-  img {
-    transition: 0.8s;
-    filter: grayscale(100%);
-  }
-  img:hover {
-    transform: rotate(2deg) scale(1.3);
-    filter: grayscale(0%);
+    font-size: 15px;
+    font-weight: bold;
   }
 }
 </style>

@@ -6,7 +6,7 @@
           <h2>SVILUPPO SITI WEB & WEB APP</h2>
           <span class="fw-bold text-muted fs-4">Tecnologie che utilizzo</span>
         </div>
-        <div class="col-6 text-center px-5">
+        <div class="col-12 col-md-6 text-center p-4">
           <h3 class="text-muted">FRONT-END</h3>
           <p class="fw-bold">
             L'occhio vuole la sua parte, le tecnologia che prediligo
@@ -17,7 +17,7 @@
             dell'html.
           </p>
         </div>
-        <div class="col-6 d-flex justify-content-evenly h-150">
+        <div class="col-12 col-md-6 d-flex justify-content-evenly h-150">
           <a href="https://it.wikipedia.org/wiki/HTML" target="”_blank”">
             <figure>
               <img
@@ -140,7 +140,7 @@
             </figure>
           </a>
         </div>
-        <div class="col-6 text-center px-5">
+        <div class="col-12 col-md-6 text-center px-5">
           <h3 class="text-muted">BACK-END</h3>
           <p class="fw-bold">
             Dietro le quinte di ogni applicazione o sito web c'è il back-end, le
@@ -163,7 +163,7 @@ export default {
 
 <style scoped lang="scss">
 #skylls {
-  height: 80vh;
+  /* height: 80vh; */
   background: radial-gradient(#594c66, #000000);
   color: white;
   padding-top: 100px;

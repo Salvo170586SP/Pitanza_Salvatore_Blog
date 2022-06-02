@@ -4,7 +4,7 @@
       <div class="row">
         <div class="col-12 d-flex justify-content-center">
           <div
-            class="d-flex align-items-center rounded border bg-pb"
+            class="d-flex align-items-center rounded border bg-pb w"
             style="width: 50rem"
           >
             <img
@@ -42,4 +42,12 @@ export default {
       background-color: white;
     }
 }
+
+/* @media screen  and (max-width: 600px){
+    .w{
+      width: 10rem;
+    }
+   
+} */
+
 </style>

@@ -5626,9 +5626,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
-//
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: "Biograpy"
 });
@@ -11275,7 +11272,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, "footer[data-v-61a7c374] {\n  height: 30vh;\n  /* background-color: #000a3e; */\n  background-color: #232730;\n  color: white;\n}", ""]);
+exports.push([module.i, "footer[data-v-61a7c374] {\n  /*  height: 30vh; */\n  /* background-color: #000a3e; */\n  background-color: #232730;\n  color: white;\n}", ""]);
 
 // exports
 
@@ -11370,7 +11367,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../../node_modules/c
 
 
 // module
-exports.push([module.i, "#biograpy p[data-v-cdc54d18] {\n  text-align: justify;\n}\n#biograpy img[data-v-cdc54d18] {\n  transition: 0.8s;\n  filter: grayscale(100%);\n}\n#biograpy img[data-v-cdc54d18]:hover {\n  transform: rotate(2deg) scale(1.3);\n  filter: grayscale(0%);\n}", ""]);
+exports.push([module.i, "#biograpy[data-v-cdc54d18] {\n  background-image: url(\"/images/IMG_20210314_104826.jpg\");\n  height: 550px;\n  background-repeat: no-repeat;\n  background-size: cover;\n  background-position: center;\n  transition: 0.8s;\n  filter: grayscale(100%);\n  position: relative;\n  color: white;\n}\n#biograpy[data-v-cdc54d18]::before {\n  content: \"\";\n  position: absolute;\n  top: 0;\n  left: 0;\n  right: 0;\n  bottom: 0;\n  z-index: 100;\n  background-color: rgba(0, 0, 0, 0.521);\n}\n#biograpy[data-v-cdc54d18]:hover {\n  filter: grayscale(0%);\n}\n#biograpy .z-i[data-v-cdc54d18] {\n  z-index: 100;\n}\n#biograpy p[data-v-cdc54d18] {\n  padding: 50px;\n  text-align: justify;\n  font-size: 15px;\n  font-weight: bold;\n}", ""]);
 
 // exports
 
@@ -11408,7 +11405,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../../node_modules/c
 
 
 // module
-exports.push([module.i, "#follow[data-v-04902c0e] {\n  background-image: linear-gradient(to top, #232730 50%, white 0%);\n  display: flex;\n  align-items: center;\n}\n#follow .bg-pb[data-v-04902c0e] {\n  box-shadow: black 0px 0px 10px 0px;\n  background-color: white;\n}", ""]);
+exports.push([module.i, "#follow[data-v-04902c0e] {\n  background-image: linear-gradient(to top, #232730 50%, white 0%);\n  display: flex;\n  align-items: center;\n}\n#follow .bg-pb[data-v-04902c0e] {\n  box-shadow: black 0px 0px 10px 0px;\n  background-color: white;\n}\n\n/* @media screen  and (max-width: 600px){\n    .w{\n      width: 10rem;\n    }\n\n} */", ""]);
 
 // exports
 
@@ -11484,7 +11481,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../../node_modules/c
 
 
 // module
-exports.push([module.i, "#skylls[data-v-5c518e0f] {\n  height: 80vh;\n  background: radial-gradient(#594c66, #000000);\n  color: white;\n  padding-top: 100px;\n}\n#skylls p[data-v-5c518e0f] {\n  text-align: justify;\n}\n#skylls .h-150[data-v-5c518e0f] {\n  height: 150px;\n}\n#skylls .icon-code[data-v-5c518e0f] {\n  transition: 0.5s;\n  cursor: pointer;\n}\n#skylls .icon-code[data-v-5c518e0f]:hover {\n  margin-bottom: 70px;\n  transform: scale(1.5);\n}", ""]);
+exports.push([module.i, "#skylls[data-v-5c518e0f] {\n  /* height: 80vh; */\n  background: radial-gradient(#594c66, #000000);\n  color: white;\n  padding-top: 100px;\n}\n#skylls p[data-v-5c518e0f] {\n  text-align: justify;\n}\n#skylls .h-150[data-v-5c518e0f] {\n  height: 150px;\n}\n#skylls .icon-code[data-v-5c518e0f] {\n  transition: 0.5s;\n  cursor: pointer;\n}\n#skylls .icon-code[data-v-5c518e0f]:hover {\n  margin-bottom: 70px;\n  transform: scale(1.5);\n}", ""]);
 
 // exports
 
@@ -43799,7 +43796,7 @@ var render = function () {
       _c("div", { staticClass: "row h-100 pt-4" }, [
         _vm._m(0),
         _vm._v(" "),
-        _c("div", { staticClass: "col-3" }, [
+        _c("div", { staticClass: "col-12 col-md-3 pt-3 " }, [
           _c("ul", { staticClass: "nav flex-column" }, [
             _vm._m(1),
             _vm._v(" "),
@@ -43865,7 +43862,7 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "col-3" }, [
+    return _c("div", { staticClass: "col-12 col-md-3 pt-3" }, [
       _c("ul", { staticClass: "nav flex-column" }, [
         _c("li", { staticClass: "nav-item" }, [
           _c("h4", [_vm._v("Contattami")]),
@@ -43894,7 +43891,7 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "col-3" }, [
+    return _c("div", { staticClass: "col-12 col-md-3 pt-3" }, [
       _c("ul", { staticClass: "nav flex-column" }, [
         _c("li", { staticClass: "nav-item" }, [
           _c("h4", [_vm._v("Seguimi anche su")]),
@@ -43954,7 +43951,7 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "col-3" }, [
+    return _c("div", { staticClass: "col-12 col-md-3 pt-3" }, [
       _c("p", [
         _vm._v("\n          2022 - realizzato con\n          "),
         _c(
@@ -44543,33 +44540,22 @@ var staticRenderFns = [
     return _c("section", { attrs: { id: "biograpy" } }, [
       _c("div", { staticClass: "container-fluid" }, [
         _c("div", { staticClass: "row" }, [
-          _c(
-            "div",
-            { staticClass: "col-7 d-flex align-items-center shadow px-5" },
-            [
-              _c("p", [
-                _vm._v(
-                  "\n          Mi chiamo Salvatore, sono un Jr. Web Developer grazie al percorso\n          nella web accademy Boolean Careers. "
-                ),
-                _c("br"),
-                _c("br"),
-                _vm._v(
-                  "\n          Ho la passione dell'informatica, del design, ma anche un\n          avventuriero tra le mie montagne. "
-                ),
-                _c("br"),
-                _c("br"),
-                _vm._v(
-                  "\n          Le mie ambizioni: crescere nella mia carriera da web developer,\n          imparare nuove tecnologie nel mondo della programmazione,\n          approfondire nel mondo delle interfacce web e nella progettazione\n          dei layout, andare in Giappone!\n        "
-                ),
-              ]),
-            ]
-          ),
-          _vm._v(" "),
-          _c("div", { staticClass: "col-5 m-0 p-0 overflow-hidden" }, [
-            _c("img", {
-              staticClass: "img-fluid",
-              attrs: { src: "images/IMG_20210314_104826.jpg", alt: "" },
-            }),
+          _c("div", { staticClass: "col-12 col-md-5 z-i" }, [
+            _c("p", [
+              _vm._v(
+                "\n          Mi chiamo Salvatore, sono un Jr. Web Developer grazie al percorso\n          nella web accademy Boolean Careers. "
+              ),
+              _c("br"),
+              _c("br"),
+              _vm._v(
+                "\n          Ho la passione dell'informatica, del design, ma anche un\n          avventuriero tra le mie montagne. "
+              ),
+              _c("br"),
+              _c("br"),
+              _vm._v(
+                "\n          Le mie ambizioni: crescere nella mia carriera da web developer,\n          imparare nuove tecnologie nel mondo della programmazione,\n          approfondire nel mondo delle interfacce web e nella progettazione\n          dei layout, andare in Giappone!\n        "
+              ),
+            ]),
           ]),
         ]),
       ]),
@@ -44608,7 +44594,7 @@ var render = function () {
           "div",
           {
             staticClass:
-              "col-4 d-flex align-items-center justify-content-end m-0",
+              "col-12 col-md-4  d-flex align-items-center justify-content-center py-3 m-0",
           },
           [
             _c("img", {
@@ -44627,7 +44613,7 @@ var render = function () {
           "div",
           {
             staticClass:
-              " col-4 d-flex align-items-center justify-content-start m-0",
+              "col-12 col-md-4 d-flex align-items-center justify-content-center m-0",
           },
           [
             _c("img", {
@@ -44658,7 +44644,7 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "col-4 py-3" }, [
+    return _c("div", { staticClass: "col-12 col-md-4 py-3" }, [
       _c("h3", { staticClass: "py-3" }, [_vm._v("Competente acquisite")]),
       _vm._v(" "),
       _c("h5", [_vm._v("HTML CSS Bootstrap")]),
@@ -44726,7 +44712,7 @@ var staticRenderFns = [
             _c(
               "div",
               {
-                staticClass: "d-flex align-items-center rounded border bg-pb",
+                staticClass: "d-flex align-items-center rounded border bg-pb w",
                 staticStyle: { width: "50rem" },
               },
               [
@@ -44860,7 +44846,7 @@ var staticRenderFns = [
               _vm._v(" "),
               _c(
                 "a",
-                { staticClass: "text-light lh-lg", attrs: { href: "#skylls" } },
+                { staticClass: "text-light lh-lg", attrs: { href: "#cvitae" } },
                 [
                   _c("i", {
                     staticClass:
@@ -45188,7 +45174,7 @@ var staticRenderFns = [
             ]),
           ]),
           _vm._v(" "),
-          _c("div", { staticClass: "col-6 text-center px-5" }, [
+          _c("div", { staticClass: "col-12 col-md-6 text-center p-4" }, [
             _c("h3", { staticClass: "text-muted" }, [_vm._v("FRONT-END")]),
             _vm._v(" "),
             _c("p", { staticClass: "fw-bold" }, [
@@ -45200,7 +45186,10 @@ var staticRenderFns = [
           _vm._v(" "),
           _c(
             "div",
-            { staticClass: "col-6 d-flex justify-content-evenly h-150" },
+            {
+              staticClass:
+                "col-12 col-md-6 d-flex justify-content-evenly h-150",
+            },
             [
               _c(
                 "a",
@@ -45452,7 +45441,7 @@ var staticRenderFns = [
             ]
           ),
           _vm._v(" "),
-          _c("div", { staticClass: "col-6 text-center px-5" }, [
+          _c("div", { staticClass: "col-12 col-md-6 text-center px-5" }, [
             _c("h3", { staticClass: "text-muted" }, [_vm._v("BACK-END")]),
             _vm._v(" "),
             _c("p", { staticClass: "fw-bold" }, [

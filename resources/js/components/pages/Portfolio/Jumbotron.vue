@@ -11,7 +11,7 @@
             mia vita oltre il coding. 
             <br><br> <br> 
           </p>
-          <a class="text-light lh-lg" href="#skylls"><i class="fa-solid fa-arrow-down fa-3x arrow-icon bounce me-3"></i></a> <span class=" lh-lg"> Scopri le mie competenze nel mondo dello
+          <a class="text-light lh-lg" href="#cvitae"><i class="fa-solid fa-arrow-down fa-3x arrow-icon bounce me-3"></i></a> <span class=" lh-lg"> Scopri le mie competenze nel mondo dello
             sviluppo web</span>
         </div>
       </div>

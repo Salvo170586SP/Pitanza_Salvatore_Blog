@@ -5,7 +5,7 @@
         <div class="col-12 text-center py-5">
           <h2>Curriculum Vitae & certificati conseguiti</h2>
         </div>
-        <div class="col-4 py-3">
+        <div class="col-12 col-md-4 py-3">
           <h3 class="py-3">Competente acquisite</h3>
 
           <h5>HTML CSS Bootstrap</h5>
@@ -34,7 +34,7 @@
             con tecnologia mysql.
           </p>
         </div>
-        <div class="col-4 d-flex align-items-center justify-content-end m-0">
+        <div class="col-12 col-md-4  d-flex align-items-center justify-content-center py-3 m-0">
           <img
             src="images/Attestato_Boolean_Pitanza_Salvatore_page-0001.jpg"
             alt=""
@@ -43,7 +43,7 @@
             @click="clickImgPrev"
           />
         </div>
-        <div class=" col-4 d-flex align-items-center justify-content-start m-0">
+        <div class="col-12 col-md-4 d-flex align-items-center justify-content-center m-0">
           <img
             src="images/Pitanza_Salvatore_cv_page-0001.jpg"
             alt=""
@@ -88,6 +88,7 @@ export default {
 </script>
 
 <style scoped lang="scss">
+
 #cvitae {
   padding: 20px 0;
   /* background-color: lightslategray; */
@@ -98,13 +99,15 @@ export default {
     &.active-next {
       transform: scale(3.5) translate(-37%);
       box-shadow: 0px 0px 25px 0px black;
-      /*  transform: rotateY(359deg) scale(2.7) translate(-30%); */
+      /*  transform: rotateY(359deg) scale(2.7) translate(-30%); */      
     }
+
     &.active-prev {
       transform: scale(3.5) translate(-10%);
       /* transform: rotateY(359deg) scale(2.7) translate(35%); */
       box-shadow: 0px 0px 25px 0px black;
     }
+  
   }
 }
 </style>
