@@ -6,7 +6,7 @@
           <h2>Curriculum Vitae & certificati conseguiti</h2>
         </div>
         <div class="col-12 col-md-4 py-3">
-          <h3 class="py-3">Competente acquisite</h3>
+          <h3 class="py-3">Competenze acquisite</h3>
 
           <h5>HTML CSS Bootstrap</h5>
           <p class="fs-6">
@@ -97,13 +97,13 @@ export default {
     box-shadow: grey 0px 0px 15px 0px;
     cursor: pointer;
     &.active-next {
-      transform: scale(3.5) translate(-37%);
+      transform: scale(3.5) translate(-50%);
       box-shadow: 0px 0px 25px 0px black;
       /*  transform: rotateY(359deg) scale(2.7) translate(-30%); */      
     }
 
     &.active-prev {
-      transform: scale(3.5) translate(-10%);
+      transform: scale(3.5) translate(0%);
       /* transform: rotateY(359deg) scale(2.7) translate(35%); */
       box-shadow: 0px 0px 25px 0px black;
     }

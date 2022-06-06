@@ -20,6 +20,7 @@ Route::middleware('auth')->prefix('admin')->name('admin.')->namespace('Admin')->
     Route::get('/', 'HomeController@index')->name('home');
     Route::resource('/posts', 'PostController');
     Route::resource('/projects', 'ProjectController');
+    Route::resource('/pictures', 'PictureController');
 });
 
 //guest

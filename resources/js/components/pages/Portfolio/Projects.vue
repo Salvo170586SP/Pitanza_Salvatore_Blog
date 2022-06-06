@@ -89,7 +89,7 @@ export default {
   border: 1px solid lightgray;
   border-radius: 15px;
   overflow: hidden;
-  transition: transform 0.8s;
+  transition: transform 0.3s ease-out;
   box-shadow: grey 0px 0px 25px -3px;
   &:hover {
     transform: translateY(-15px);

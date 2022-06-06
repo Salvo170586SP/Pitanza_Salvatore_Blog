@@ -48,6 +48,9 @@ export default {
 
 <style scoped lang="scss">
 #blog {
+  main{
+    padding-top: 65px;
+  }
   position: relative;
   #top {
     position: fixed;

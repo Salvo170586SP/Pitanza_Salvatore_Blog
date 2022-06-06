@@ -34,7 +34,7 @@
             dare una mano alle persone meno fortunate. Ma nel 2020...
           </p>
 
-          <h3 class="pt-5">Il percorso in Boolean Careers</h3>
+          <h3 class="pt-5">Il percorso</h3>
           <p>
             La pandemia ha portato un pò tutti a svoltare le nostre vite, e di
             certo non sono stato con le mani in mano, tra una lettura e l'altra,

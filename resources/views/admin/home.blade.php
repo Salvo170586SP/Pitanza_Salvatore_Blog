@@ -14,7 +14,8 @@
                         </div>
                     @endif
                         <a href="{{ route('admin.posts.index') }}" class="btn btn-primary text-light me-3">I miei posts</a>
-                        <a href="{{ route('admin.projects.index') }}" class="btn btn-primary text-light">I miei progetti</a>
+                        <a href="{{ route('admin.projects.index') }}" class="btn btn-primary text-light me-3">I miei progetti</a>
+                        <a href="{{ route('admin.pictures.create') }}" class="btn btn-primary text-light me-3">Galleria</a>
                    {{--  {{ __('You are logged in!') }} --}}
                 </div>
             </div>
