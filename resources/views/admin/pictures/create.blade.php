@@ -12,13 +12,24 @@
                         <input type="file" multiple name="image">
                     </div>
 
-                    <button class="btn btn-secondary" type="submit">Invia</button>
+                    <button class="btn btn-secondary shadow" type="submit">Aggiungi</button>
                 </form>
             </div>
             <div class="col-9">
-                @foreach ($pictures as $picture)
-                    <img width="300" class="img-fluid m-1 border rounded border-light shadow" src="{{ asset("/storage/$picture->image") }}" alt=""></>
-                @endforeach
+                <div class="d-flex  flex-wrap b-s">
+                    @forelse ($pictures as $picture)        
+                    <div class="img-gallery position-relative">
+                        <img width="233" class="img-fluid img-scale m-1 border rounded border-secondary " src="{{ asset("/storage/$picture->image") }}" alt="img">
+                        <form action="{{ route('admin.pictures.destroy', $picture) }}" method="POST">
+                            @method('DELETE')
+                            @csrf
+                            <button type="submit" class="btn btn-small btn-danger position-absolute"><i class="fa-solid fa-trash"></i></button>
+                        </form>
+                    </div>
+                    @empty
+                    <p class="w-100 text-center">Non ci sono immagini caricate</p>
+                    @endforelse 
+                </div>
             </div>
         </div>
     </div>

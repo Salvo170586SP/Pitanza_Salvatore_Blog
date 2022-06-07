@@ -16,7 +16,6 @@ class PictureController extends Controller
      */
     public function index()
     {
-
     }
 
     /**
@@ -25,7 +24,7 @@ class PictureController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function create()
-    {   
+    {
         $pictures = Picture::all();
 
         $picture = new Picture();
@@ -40,22 +39,40 @@ class PictureController extends Controller
      */
     public function store(Request $request)
     {
-    /*     $request->validate([
+        $request->validate([
             'image' => 'nullable|image',
         ], [
             'image' => 'l\'immagine deve essere corretta',
-        ]); */
+        ]);
+
 
         $data = $request->all();
 
-        
-        if (array_key_exists('image', $data)) {
+
+     /*    $new_picture = Picture::create($data); 
+
+        if (array_key_exists('images[]', $data)) {
+            foreach ($request->file('images[]') as $image) {
+
+                 $image->move(public_path('gallery_image'), $image);
+                Storage::put('gallery_image', $data['images[]']);
+                $img = Picture::create([
+                    'image' => $image,
+                ]);
+            }
+        }
+ */
+
+
+        $data = $request->all();
+
+         if (array_key_exists('image', $data)) {
             $img_url = Storage::put('gallery_image', $data['image']);
             $data['image'] = $img_url;
         }
         
         $new_picture = Picture::create($data);
-        
+
         //dd($data);
 
 
@@ -105,6 +122,9 @@ class PictureController extends Controller
      */
     public function destroy(Picture $picture)
     {
-        //
+        if ($picture->image) Storage::delete($picture->image);
+        $picture->delete();
+
+        return redirect()->route('admin.pictures.create');
     }
 }
