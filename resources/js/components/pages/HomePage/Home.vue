@@ -1,7 +1,7 @@
 <template>
 <div>
   <Jumbotron />
-  <Biograpy />
+  <Bio />
   <Skylls />
   <Projects />
   <CVitae />
@@ -11,17 +11,17 @@
 
 <script>
 import Jumbotron from './Jumbotron.vue';
-import Biograpy from './Biograpy.vue';
+import Bio from './Bio.vue';
 import Skylls from './Skylls.vue';
 import CVitae from './CVitae.vue';
 import Projects from './Projects.vue';
 import Follow from './Follow.vue';
 
 export default {
-  name: "HomePortfolio",
+  name: "Home",
   components: {
     Jumbotron,
-    Biograpy,
+    Bio,
     Skylls,
     Projects,
     CVitae,

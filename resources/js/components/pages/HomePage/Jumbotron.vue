@@ -1,5 +1,5 @@
 <template>
-  <section id="jumbotron" class="shadow">
+  <section id="jumbotron">
     <div class="container h-100">
       <div class="row h-100 align-items-center">
         <div class="col-12 text-light z-i">
@@ -11,8 +11,9 @@
             mia vita oltre il coding. 
             <br><br> <br> 
           </p>
-          <a class="text-light lh-lg" href="#cvitae"><i class="fa-solid fa-arrow-down fa-3x arrow-icon bounce me-3"></i></a> <span class=" lh-lg"> Scopri le mie competenze nel mondo dello
-            sviluppo web</span>
+          <p class=" lh-lg"> Scopri le mie competenze nel mondo dello
+            sviluppo web</p>
+            <a class="text-light lh-lg" href="#cvitae"><i class="fa-solid fa-arrow-down fa-3x arrow-icon bounce me-3"></i></a> 
         </div>
       </div>
     </div>
@@ -27,8 +28,8 @@ export default {
 
 <style scoped lang="scss">
 #jumbotron {
-  height: 50vh;
-  background-image: url("/images/shubham-dhage-NsPqV-WsZYY-unsplash.jpg");
+  height: 100vh;
+  background-image: url("/images/photo-1635830625698-3b9bd74671ca.avif");
   background-position: bottom;
   background-repeat: no-repeat;
   background-size: cover;

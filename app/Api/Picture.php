@@ -1,13 +1,10 @@
 <?php
 
-namespace App\Models;
+namespace App\Api;
 
 use Illuminate\Database\Eloquent\Model;
 
 class Picture extends Model
 {
-   
-    protected $fillable = [
-        'image'
-    ];
+    //
 }

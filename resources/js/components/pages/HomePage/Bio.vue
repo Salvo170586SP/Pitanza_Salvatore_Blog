@@ -1,17 +1,15 @@
 <template>
   <section id="biograpy">
-    <div class="container-fluid">
-      <div class="row">
+    <div class="container h-100">
+      <div class="row h-100 align-items-center">
         <div class="col-12 col-md-5 z-i">
           <p>
-            Mi chiamo Salvatore, sono un Jr. Web Developer grazie al percorso
-            nella web accademy Boolean Careers. <br /><br />
-            Ho la passione dell'informatica, del design, ma anche un
-            avventuriero tra le mie montagne. <br /><br />
-            Le mie ambizioni: crescere nella mia carriera da web developer,
-            imparare nuove tecnologie nel mondo della programmazione,
-            approfondire nel mondo delle interfacce web e nella progettazione
-            dei layout, andare in Giappone!
+            Mi chiamo Salvatore, sono un Jr.Web Developer, qui potete consultare i miei progetti, fare collaborazioni o chiedere preventivi per trovare una soluzione alla vostre idee.<br /><br />
+            Ho la passione dell'informatica, del design, e delle mie montagne. <br> <br>
+            Progetti per il futuro: <br />
+            <span class="fs-4">
+            Non smettere mai di esplorare!
+            </span>
           </p>
         </div>
       </div>
@@ -21,14 +19,14 @@
 
 <script>
 export default {
-  name: "Biograpy",
+  name: "Bio",
 };
 </script>
 
 <style scoped lang="scss">
 #biograpy {
   background-image: url("/images/IMG_20210314_104826.jpg");
-  height: 550px;
+  height: 100vh;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -45,7 +43,7 @@ export default {
     right: 0;
     bottom: 0;
     z-index: 100;
-    background-color: rgba(0, 0, 0, 0.521);
+    background-color: rgb(22 28 80 / 37%);
   }
 
   &:hover {
@@ -57,10 +55,7 @@ export default {
   }
 
   p {
-    padding: 50px;
     text-align: justify;
-    font-size: 15px;
-    font-weight: bold;
   }
 }
 </style>

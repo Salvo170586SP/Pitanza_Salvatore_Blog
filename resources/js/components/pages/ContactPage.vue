@@ -137,6 +137,5 @@ export default {
 <style scoped lang="scss">
 #contact {
   margin-top: 70px;
-  height: 70vh;
 }
 </style>

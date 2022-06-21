@@ -2,11 +2,8 @@
   <section id="home-bio">
     <div class="container">
       <div class="row">
-        <div class="col-12">
-         
-        </div>
-        <div class="col-9">
-          <h3 class="py-4">MI RACCONTO</h3>
+        <div class="col-12 col-md-9  pe-md-5 ">
+          <h3 class="pb-4">MI RACCONTO</h3>
           <p>
             Mi chiamo Salvatore Pitanza, <br />
             il mio percorso nel settore informatico è stato lungo e a tratti
@@ -63,10 +60,10 @@
           </p>
         </div>
 
-        <div class="col-3">
+        <div class="col-12 col-md-3 d-flex flex-column  align-items-center">
           <img
             src="images/140731356_4380348161981271_7614192049077160206_n.jpg"
-            class="img-fluid shadow border img-bio"
+            class="img-fluid border img-bio"
             alt="img_bio"
           />
           <div class="my-4">
@@ -97,8 +94,11 @@ export default {
     height: 300px;
     width: 300px;
     object-fit: cover;
-    border-radius: 10%;
+    border-radius: 5%;
     object-position: center;
+  }
+  p{
+   text-align: justify;
   }
 }
 </style>

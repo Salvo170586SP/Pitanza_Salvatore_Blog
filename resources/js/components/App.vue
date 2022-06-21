@@ -6,7 +6,7 @@
     </main>
     <Footer />
     <div v-if="toTop" id="top">
-      <a href="#"><i class="fa-solid fa-circle-arrow-up fa-3x"></i></a>
+      <a href="#"><i class="fa-solid fa-circle-arrow-up fa-2x"></i></a>
     </div>
   </div>
 </template>
@@ -48,18 +48,29 @@ export default {
 
 <style scoped lang="scss">
 #blog {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
   main{
     padding-top: 65px;
+
+    flex-grow: 1;
   }
   position: relative;
   #top {
     position: fixed;
-    bottom: 70px;
-    right: 70px;
+    bottom: 0;
+    right: 25px;
+    filter: drop-shadow(0 0 5px black);
     z-index: 100000;
-    display: none;
-    &.show {
-      display: block;
+    transition: transform 1s, opacity 1s ;
+    opacity: 0;
+    a{
+      color: white;
+    }
+&.show {
+      opacity: 1;
+      transform: translateY(-30px);
     }
   }
 }

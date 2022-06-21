@@ -1,12 +1,16 @@
-.img-gallery{  
-    .position-absolute{
+.img-gallery {
+    img {
+        object-fit: cover;
+        height: 100px;
+    }
+    .position-absolute {
         top: 10px;
         right: 10px;
         z-index: 1000;
         display: none;
     }
-    
-    &:hover .position-absolute{
+
+    &:hover .position-absolute {
         display: block;
     }
 }
